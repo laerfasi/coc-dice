@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>：）</title>
+    </head>
+    <body>
+        <button onclick="show1d100()">掷1d100</button>
+        <pre id="out">等你掷骰</pre>
+        <script>
+            function d1d100(){
+                return Math.floor(Math.random()*100)+1;
+            }
+            function out(text){
+                document.getElementById("out").textContent=text;
+            }
+            function show1d100(){
+                out("1d100="+d1d100());
+            }
+        </script>
+</body>
+</html>
